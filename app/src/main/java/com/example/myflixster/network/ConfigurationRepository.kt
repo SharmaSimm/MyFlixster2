@@ -2,7 +2,7 @@ package com.example.myflixster.network
 
 import android.util.Log
 import com.bumptech.glide.load.HttpException
-import com.example.myflixster.api.MovieApiService
+import com.example.myflixster.models.MovieApiService
 import com.example.myflixster.models.ConfigurationResponse
 
 class ConfigurationRepository {

@@ -1,4 +1,4 @@
-package com.example.myflixster
+package com.example.myflixster.models
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
@@ -12,8 +12,8 @@ import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
-import com.example.myflixster.models.Movie
 import android.util.Log
+import com.example.myflixster.R
 
 class MovieAdapter(
     private val movies: List<Movie>,
@@ -51,7 +51,7 @@ class MovieAdapter(
         // Load the movie poster
         if (posterUrl != null) {
             Glide.with(holder.itemView.context)
-                .load(posterUrl)
+                .load("https://image.tmdb.org/t/p/w500/${movie.posterPath}")
                 .placeholder(R.drawable.placeholder)
                 .error(R.drawable.error) // error drawable
                 .listener(object : RequestListener<Drawable> {

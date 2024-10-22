@@ -1,6 +1,6 @@
 package com.example.myflixster.network
 
-import com.example.myflixster.api.MovieApiService
+import com.example.myflixster.models.MovieApiService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

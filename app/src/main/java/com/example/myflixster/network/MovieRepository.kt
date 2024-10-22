@@ -1,10 +1,9 @@
 package com.example.myflixster.network
 
-import com.example.myflixster.api.MovieApiService
+import com.example.myflixster.models.MovieApiService
 import com.example.myflixster.models.MovieResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.await
 import retrofit2.HttpException
 
 class MovieRepository {
